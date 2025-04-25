@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "jk_economy_mod",
+	"version": "${version}",
+	"name": "Economy Mod",
+	"description": "화폐 모드 by Jiekie",
+	"authors": [
+		"Jiekie"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/JIEKlE/jk_economy_mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/jk_economy_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"jiekie.EconomyMod"
+		],
+		"fabric-datagen": [
+			"jiekie.EconomyModDataGenerator"
+		],
+		"client": [
+			"jiekie.EconomyModClient"
+		]
+	},
+	"mixins": [
+		"jk_economy_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
