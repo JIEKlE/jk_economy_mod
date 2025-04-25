@@ -32,7 +32,7 @@ public class MoneyOverlayRenderer implements HudRenderCallback {
 
         // logo size
         int logoWidth = 64;
-        int logoHeight = 17;
+        int logoHeight = 21;
         int logoX = headX + headSize + innerMargin;
         int logoY = headY;
 
@@ -40,7 +40,7 @@ public class MoneyOverlayRenderer implements HudRenderCallback {
         String moneyText = MoneyPacketReceiver.currentMoney;
         Text text = Text.literal(moneyText).formatted(Formatting.WHITE);
         int moneyTextWidth = Math.min(client.textRenderer.getWidth(text), 64);
-        int moneyTextHeight = 12;
+        int moneyTextHeight = 8;
         int moneyX = logoX + (64 - moneyTextWidth);
         int moneyY = logoY + logoHeight + innerMargin;
 
